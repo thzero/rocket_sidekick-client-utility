@@ -1,4 +1,4 @@
-import AppConstants from '@/constants';
+import AppConstants from '@/utility/constants';
 
 import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
 
