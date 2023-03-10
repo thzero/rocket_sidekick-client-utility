@@ -22,6 +22,7 @@ const Constants = {
 	},
 	Features: {
 		Auth: false,
+		CookieComply: true,
 		MobileApp: false,
 		Rockets: true,
 		Favorites: true,
@@ -43,6 +44,7 @@ const Constants = {
 		SERVICE_API: 'serviceApi',
 		SERVICE_DOWNLOAD: 'serviceDownload',
 		SERVICE_EXTERNAL_MOTOR_SEARCH: 'serviceExternalMotorSearch',
+		SERVICE_REST_COMMUNICATION_SECONDARY: 'serviceRestCommunicationSecondary',
 		SERVICE_ROCKETS: 'serviceRockets',
 		SERVICE_TOOLS_CALCULATION_ENGINE: 'serviceToolsCalculationEngine',
 		SERVICE_TOOLS_FOAM: 'serviceToolsFoam',
@@ -99,7 +101,7 @@ const Constants = {
 			},
 			density: {
 				default: 'lbmft3',
-				lbmft3: 'lbm/ft3'	
+				lbmft3: 'lbm/ft3'
 			},
 			distance: {
 				default: 'ft',
