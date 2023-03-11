@@ -3,7 +3,6 @@ import AppConstants from '@/utility/constants';
 import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
 
 class AppUtility {
-	static _features = AppConstants.Features;
 	static isDebug = false;
 
 	// TODO: move to library
@@ -21,14 +20,6 @@ class AppUtility {
 		// eslint-disable-next-line no-unneeded-ternary
 		const output = name + ': ' + (value ? value : 'null');
 		console.debug(output);
-	}
-
-	static get features() {
-		return AppUtility._features;
-	}
-
-	static set features(value) {
-		AppUtility._features = value;
 	}
 
 	static info(args) {
