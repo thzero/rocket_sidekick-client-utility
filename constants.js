@@ -43,8 +43,11 @@ const Constants = {
 	},
 	InjectorKeys: {
 		SERVICE_API: 'serviceApi',
+		SERVICE_DATABASE: 'serviceDatabase',
+		SERVICE_DATABASE_MANUFACTURERS: 'serviceDatabaseManufacturers',
 		SERVICE_DOWNLOAD: 'serviceDownload',
 		SERVICE_EXTERNAL_MOTOR_SEARCH: 'serviceExternalMotorSearch',
+		SERVICE_MANUFACTURERS: 'serviceManufacturers',
 		SERVICE_REST_COMMUNICATION_SECONDARY: 'serviceRestCommunicationSecondary',
 		SERVICE_ROCKETS: 'serviceRockets',
 		SERVICE_TOOLS_CALCULATION_ENGINE: 'serviceToolsCalculationEngine',
