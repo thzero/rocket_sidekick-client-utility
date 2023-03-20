@@ -37,6 +37,7 @@ const Constants = {
 	InjectorKeys: {
 		SERVICE_API: 'serviceApi',
 		SERVICE_EXTERNAL_MOTOR_SEARCH: 'serviceExternalMotorSearch',
+		SERVICE_CHECKLISTS: 'serviceChecklists',
 		SERVICE_MANUFACTURERS: 'serviceManufacturers',
 		SERVICE_PARTS: 'serviceParts',
 		SERVICE_ROCKETS: 'serviceRockets',
