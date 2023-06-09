@@ -20,6 +20,8 @@ const Constants = {
 		Auth: false,
 		CookieComply: true,
 		Home: {
+			additional: true,
+			additionalId: null,
 			slideshow: true
 		},
 		MobileAppLanding: false,
