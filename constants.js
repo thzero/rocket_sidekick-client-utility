@@ -19,6 +19,9 @@ const Constants = {
 	Features: {
 		Auth: false,
 		CookieComply: true,
+		Home: {
+			slideshow: true
+		},
 		MobileAppLanding: false,
 		MobileOnly: false,
 		Rockets: true,

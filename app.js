@@ -1,5 +1,7 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants';
 
+import LibraryCommonUtility from '@thzero/library_common/utility';
+
 import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
 
 class AppUtility {
@@ -115,6 +117,12 @@ class AppUtility {
 		const settings = user.settings ? user.settings : null;
 		const userName = settings && settings.gamerTag ? settings.gamerTag : user.external && user.external.name ? user.external.name : '******';
 		return userName;
+	}
+
+	static ttlDelta(ttl) {
+		const now = LibraryCommonUtility.getTimestamp();
+		const delta = ttl - now;
+		return delta > 0;
 	}
 
 	static _injector = null;
