@@ -20,7 +20,7 @@ const Constants = {
 		Auth: false,
 		CookieComply: true,
 		Home: {
-			additional: true,
+			additional: false,
 			additionalId: null,
 			slideshow: true
 		},
