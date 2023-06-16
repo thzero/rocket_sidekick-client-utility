@@ -51,6 +51,9 @@ const Constants = {
 		SERVICE_TOOLS_THRUST2WEIGHT: 'serviceToolsThrust2Weight',
 		SERVICE_TOOLS_WEATHERCOCKING: 'serviceToolsWeathercocking'
 	},
+	Overlay: {
+		Timeout: 5000
+	},
 	RocketTypes: {
 		Site: 'site',
 		Yours: 'yours'
