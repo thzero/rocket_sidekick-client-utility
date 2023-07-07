@@ -33,10 +33,13 @@ const Constants = {
 		Yours: {
 			value: false,
 			Altimeters: false,
-			Checklists: false,
+			Checklists: true,
 			Launches: false,
-			Parachutes: false,
-			Rockets: false
+			Motors: false,
+			MotorCases: false,
+			Parachutes: true,
+			Rockets: true,
+			Trackers: false
 		}
 	},
 	InjectorKeys: {
