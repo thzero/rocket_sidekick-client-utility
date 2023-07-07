@@ -1,5 +1,6 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants';
 
+import LibraryClientUtility from '@thzero/library_client/utility/index';
 import LibraryCommonUtility from '@thzero/library_common/utility';
 
 import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
@@ -108,6 +109,48 @@ class AppUtility {
 
 	static measurementUnitsOptions() {
 		return [ AppCommonConstants.MeasurementUnits.english.id, AppCommonConstants.MeasurementUnits.metrics.id ];
+	}
+
+	static measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, measurementUnitType) {
+		if (String.isNullOrEmpty(measurementUnitsId) || String.isNullOrEmpty(measurementUnitId))
+			return '';
+		return LibraryClientUtility.$trans.t('measurementUnits.' + measurementUnitsId + '.' + measurementUnitType + '.' + measurementUnitId + 'Abbr');
+	}
+
+	static measurementUnitTranslateAcceleration(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.acceleration.id);
+	}
+
+	static measurementUnitTranslateArea(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.area.id);
+	}
+	
+	static measurementUnitTranslateDensity(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.density.id);
+	}
+	
+	static measurementUnitTranslateDistance(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.distance.id);
+	}
+	
+	static measurementUnitTranslateFluid(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.fluid.id);
+	}
+
+	static measurementUnitTranslateLength(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.length.id);
+	}
+
+	static measurementUnitTranslateVelocity(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.velocity.id);
+	}
+
+	static measurementUnitTranslateVolume(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.volume.id);
+	}
+	
+	static measurementUnitTranslateWeight(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.weight.id);
 	}
 
 	static userDisplayName(correlationId, user) {
