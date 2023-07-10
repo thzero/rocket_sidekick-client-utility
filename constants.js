@@ -34,11 +34,15 @@ const Constants = {
 			value: false,
 			Altimeters: false,
 			Checklists: true,
+			ChuteProtectors: true,
+			ChuteReleases: false,
+			DeploymentBags: false,
 			Launches: false,
 			Motors: false,
 			MotorCases: false,
 			Parachutes: true,
 			Rockets: true,
+			Streamers: false,
 			Trackers: false
 		}
 	},
