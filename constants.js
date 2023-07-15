@@ -32,7 +32,7 @@ const Constants = {
 		Statistics: false,
 		Yours: {
 			value: false,
-			Altimeters: false,
+			Altimeters: true,
 			Checklists: true,
 			ChuteProtectors: true,
 			ChuteReleases: true,
@@ -42,8 +42,8 @@ const Constants = {
 			MotorCases: false,
 			Parachutes: true,
 			Rockets: true,
-			Streamers: false,
-			Trackers: false
+			Streamers: true,
+			Trackers: true
 		}
 	},
 	InjectorKeys: {
