@@ -9,6 +9,16 @@ class AppUtility {
 	static isDebug = false;
 
 	// TODO: move to library
+	static convertNumber(value, defaultValue) {
+		defaultValue = defaultValue ? defaultValue : null;
+
+		if (String.isNullOrEmpty(value))
+			return null;
+		value = String.trim(value);
+		return !String.isNullOrEmpty(value) ? Number(value) : defaultValue;
+	}
+
+	// TODO: move to library
 	static debug(args) {
 		if (!AppUtility.isDebug)
 			return;
