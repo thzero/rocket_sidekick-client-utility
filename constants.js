@@ -42,7 +42,6 @@ const Constants = {
 			MotorCases: false,
 			Parachutes: true,
 			Rockets: true,
-			RocketSetups: true,
 			Streamers: true,
 			Trackers: true
 		}
