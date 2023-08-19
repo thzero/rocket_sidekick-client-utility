@@ -53,6 +53,7 @@ const Constants = {
 		SERVICE_MANUFACTURERS: 'serviceManufacturers',
 		SERVICE_PARTS: 'serviceParts',
 		SERVICE_ROCKETS: 'serviceRockets',
+		SERVICE_ROCKETSETUPS: 'serviceRocketSetups',
 		SERVICE_TOOLS_CALCULATION_ENGINE: 'serviceToolsCalculationEngine',
 		SERVICE_TOOLS_PARACHUTE_SIZING: 'serviceToolsParachuteSizing',
 		SERVICE_TOOLS_THRUST2WEIGHT: 'serviceToolsThrust2Weight',
