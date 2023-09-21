@@ -65,6 +65,19 @@ const Constants = {
 	RocketTypes: {
 		Site: 'site',
 		Yours: 'yours'
+	},
+	Tools: {
+		ParachuteSizing: {
+			calculationTypes: {
+				diameter: 'diameter',
+				velocity: 'velocity'
+			},
+			shapes: {
+				circle: 'circle',
+				hexagon: 'hexagon',
+				octagon: 'octagon'
+			}
+		}
 	}
 };
 
