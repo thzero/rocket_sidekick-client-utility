@@ -37,7 +37,7 @@ const Constants = {
 			ChuteProtectors: true,
 			ChuteReleases: true,
 			DeploymentBags: true,
-			Launches: false,
+			Launches: true,
 			Motors: false,
 			MotorCases: false,
 			Parachutes: true,
