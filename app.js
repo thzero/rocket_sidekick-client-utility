@@ -8,6 +8,26 @@ import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
 class AppUtility {
 	static isDebug = false;
 
+	static address(address) {
+		if (!address)
+			return '';
+
+		let temp = '';
+		if (address) {
+			if (!String.isNullOrEmpty(address.city))
+				temp += address.city;
+			if (!String.isNullOrEmpty(temp))
+				temp += ', ';
+			if (!String.isNullOrEmpty(address.stateProvince))
+				temp += address.stateProvince;
+			if (!String.isNullOrEmpty(temp))
+				temp += ' ';
+			if (!String.isNullOrEmpty(address.country))
+				temp += address.country;
+		}
+		return temp;
+	}
+
 	// TODO: move to library
 	static convertNumber(value, defaultValue) {
 		defaultValue = defaultValue ? defaultValue : null;
