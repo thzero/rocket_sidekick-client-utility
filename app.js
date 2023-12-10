@@ -70,6 +70,7 @@ class AppUtility {
 		settings.measurementUnits.altitude = AppCommonConstants.MeasurementUnits.english.altitude.default;
 		settings.measurementUnits.distance = AppCommonConstants.MeasurementUnits.english.distance.default;
 		settings.measurementUnits.length = AppCommonConstants.MeasurementUnits.english.length.default;
+		settings.measurementUnits.temperature = AppCommonConstants.MeasurementUnits.english.temperature.default;
 		settings.measurementUnits.velocity = AppCommonConstants.MeasurementUnits.english.velocity.default;
 		settings.measurementUnits.volume = AppCommonConstants.MeasurementUnits.english.volume.default;
 		settings.measurementUnits.weight = AppCommonConstants.MeasurementUnits.english.weight.default;
@@ -124,6 +125,12 @@ class AppUtility {
 		measurementUnitsId = !String.isNullOrEmpty(measurementUnitsId) ? measurementUnitsId : AppUtility.measurementUnitsIdDefault(correlationId, settings);
 		return settings && settings.measurementUnits && (settings.measurementUnits.id === measurementUnitsId) && settings.measurementUnits.length ? settings.measurementUnits.length
 			: AppCommonConstants.MeasurementUnits[measurementUnitsId].length.default;
+	}
+
+	static measurementUnitTemperatureId(correlationId, settings, measurementUnitsId) {
+		measurementUnitsId = !String.isNullOrEmpty(measurementUnitsId) ? measurementUnitsId : AppUtility.measurementUnitsIdDefault(correlationId, settings);
+		return settings && settings.measurementUnits && (settings.measurementUnits.id === measurementUnitsId) && settings.measurementUnits.temperature ? settings.measurementUnits.temperature
+			: AppCommonConstants.MeasurementUnits[measurementUnitsId].temperature.default;
 	}
 
 	static measurementUnitVelocityId(correlationId, settings, measurementUnitsId) {
