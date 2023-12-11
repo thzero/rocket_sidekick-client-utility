@@ -1,4 +1,5 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants';
+import AppSharedConstants from '@/utility/constants';
 
 import LibraryClientUtility from '@thzero/library_client/utility/index';
 import LibraryCommonUtility from '@thzero/library_common/utility';
@@ -75,6 +76,10 @@ class AppUtility {
 		settings.measurementUnits.volume = AppCommonConstants.MeasurementUnits.english.volume.default;
 		settings.measurementUnits.weight = AppCommonConstants.MeasurementUnits.english.weight.default;
 		return settings;
+	}
+
+	static linkThrustCurve() {
+		return `<a class="external" href="${AppSharedConstants.External.thrustCurve}" target="_blank">${LibraryClientUtility.$trans.t('menu.thrustcurve')}</a>`;
 	}
 
 	static measurementUnitsIdDefault(correlationId, settings) {
