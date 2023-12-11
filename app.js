@@ -168,6 +168,10 @@ class AppUtility {
 	static measurementUnitTranslateArea(correlationId, measurementUnitsId, measurementUnitId) {
 		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.area.id);
 	}
+
+	static measurementUnitTranslateAltitude(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.altitude.id);
+	}
 	
 	static measurementUnitTranslateDensity(correlationId, measurementUnitsId, measurementUnitId) {
 		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.density.id);
@@ -183,6 +187,10 @@ class AppUtility {
 
 	static measurementUnitTranslateLength(correlationId, measurementUnitsId, measurementUnitId) {
 		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.length.id);
+	}
+
+	static measurementUnitTranslateTemperature(correlationId, measurementUnitsId, measurementUnitId) {
+		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.temperature.id);
 	}
 
 	static measurementUnitTranslateVelocity(correlationId, measurementUnitsId, measurementUnitId) {
