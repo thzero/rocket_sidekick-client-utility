@@ -29,37 +29,6 @@ class AppUtility {
 		return temp;
 	}
 
-	// TODO: move to library
-	static convertNumber(value, defaultValue) {
-		defaultValue = defaultValue ? defaultValue : null;
-
-		if (String.isNullOrEmpty(value))
-			return null;
-		value = String.trim(value);
-		return !String.isNullOrEmpty(value) ? Number(value) : defaultValue;
-	}
-
-	// TODO: move to library
-	static debug(args) {
-		if (!AppUtility.isDebug)
-			return;
-		console.debug(args);
-	}
-
-	// TODO: move to library
-	static debug2(name, value) {
-		if (!AppUtility.isDebug)
-			return;
-
-		// eslint-disable-next-line no-unneeded-ternary
-		const output = name + ': ' + (value ? value : 'null');
-		console.debug(output);
-	}
-
-	static info(args) {
-		console.info(args);
-	}
-
 	static initializeSettingsUser() {
 		const settings = new SettingsUser();
 		settings.measurementUnits = {
@@ -208,21 +177,6 @@ class AppUtility {
 	
 	static measurementUnitTranslateWeight(correlationId, measurementUnitsId, measurementUnitId) {
 		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.weight.id);
-	}
-
-	static userDisplayName(correlationId, user) {
-		if (!user || !user.settings)
-			return '';
-
-		const settings = user.settings ? user.settings : null;
-		const userName = settings && settings.gamerTag ? settings.gamerTag : user.external && user.external.name ? user.external.name : '******';
-		return userName;
-	}
-
-	static ttlDelta(ttl) {
-		const now = LibraryCommonUtility.getTimestamp();
-		const delta = ttl - now;
-		return delta > 0;
 	}
 
 	static _injector = null;
