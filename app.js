@@ -2,7 +2,6 @@ import AppCommonConstants from 'rocket_sidekick_common/constants';
 import AppSharedConstants from '@/utility/constants';
 
 import LibraryClientUtility from '@thzero/library_client/utility/index';
-import LibraryCommonUtility from '@thzero/library_common/utility';
 
 import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
 
