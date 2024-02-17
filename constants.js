@@ -54,6 +54,7 @@ const Constants = {
 		SERVICE_EXTERNAL_MOTOR_SEARCH: 'serviceExternalMotorSearch',
 		SERVICE_CHECKLISTS: 'serviceChecklists',
 		SERVICE_COUNTRIES: 'serviceCountries',
+		SERVICE_INVENTORY: 'serviceInventory',
 		SERVICE_LAUNCHES: 'serviceLaunches',
 		SERVICE_LOCATIONS: 'serviceLocations',
 		SERVICE_MANUFACTURERS: 'serviceManufacturers',
