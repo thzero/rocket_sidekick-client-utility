@@ -1,5 +1,6 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants';
 import AppSharedConstants from '@/utility/constants';
+import LibraryClientConstants from '@thzero/library_client/constants.js';
 
 import LibraryClientUtility from '@thzero/library_client/utility/index';
 
@@ -176,6 +177,13 @@ class AppUtility {
 	
 	static measurementUnitTranslateWeight(correlationId, measurementUnitsId, measurementUnitId) {
 		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.weight.id);
+	}
+
+	static usageMetricsMeasurementTag(correlationId, tag) {
+		(async () => {
+			const serviceUsageMetrics = LibraryClientUtility.$injector.getService(LibraryClientConstants.InjectorKeys.SERVICE_USAGE_METRICS);
+			await serviceUsageMetrics.tag(correlationId, tag);
+		})();
 	}
 
 	static _injector = null;
