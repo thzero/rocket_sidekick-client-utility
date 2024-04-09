@@ -3,6 +3,7 @@ import AppSharedConstants from '@/utility/constants';
 import LibraryClientConstants from '@thzero/library_client/constants.js';
 
 import LibraryClientUtility from '@thzero/library_client/utility/index';
+import LibraryMomentUtility from '@thzero/library_common/utility/moment';
 
 import SettingsUser from 'rocket_sidekick_common/data/settingsUser';
 
@@ -177,6 +178,12 @@ class AppUtility {
 	
 	static measurementUnitTranslateWeight(correlationId, measurementUnitsId, measurementUnitId) {
 		return AppUtility.measurementUnitTranslate(correlationId, measurementUnitsId, measurementUnitId, AppCommonConstants.MeasurementUnits.weight.id);
+	}
+
+	static ttlDelta(ttl) {
+		const now = LibraryMomentUtility.getTimestamp();
+		const delta = now - ttl;
+		return delta < 0;
 	}
 
 	static usageMetricsMeasurementTag(correlationId, tag) {
